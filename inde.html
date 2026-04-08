@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTH Media - Mai Sỹ Thành Huy</title>
+    <!-- Chèn Font Awesome để lấy icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #007bff;
+            --secondary-color: #00d2ff;
+            --dark-color: #1a1a1a;
+            --text-color: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 500px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Profile Section */
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid var(--secondary-color);
+            margin-bottom: 15px;
+            object-fit: cover;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+        }
+
+        .brand-name {
+            color: var(--secondary-color);
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 14px;
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        /* Buttons Section */
+        .link-item {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        .link-item:hover {
+            transform: translateY(-5px);
+            background: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+
+        .link-item i {
+            font-size: 24px;
+            width: 40px;
+        }
+
+        .link-content {
+            flex-grow: 1;
+            text-align: left;
+            padding-left: 10px;
+        }
+
+        .link-content span {
+            display: block;
+            font-weight: bold;
+        }
+
+        .link-content small {
+            font-size: 12px;
+            opacity: 0.8;
+        }
+
+        /* Section Title */
+        .section-title {
+            font-size: 18px;
+            margin: 25px 0 15px;
+            text-align: left;
+            border-left: 4px solid var(--secondary-color);
+            padding-left: 10px;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 30px;
+            font-size: 12px;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Thông tin Admin -->
+        <img src="https://via.placeholder.com/150" alt="Mai Sỹ Thành Huy" class="profile-img">
+        <h1>Mai Sỹ Thành Huy</h1>
+        <span class="brand-name">MTH Media - Giải Pháp Mạng Xã Hội</span>
+
+        <!-- Mục Tăng tương tác -->
+        <div class="section-title">Dịch Vụ Tương Tác</div>
+        
+        <a href="https://example.com/buff" class="link-item">
+            <i class="fas fa-rocket"></i>
+            <div class="link-content">
+                <span>Hệ Thống Tăng Tương Tác</span>
+                <small>Like, Sub, View, Comment đa nền tảng</small>
+            </div>
+            <i class="fas fa-chevron-right"></i>
+        </a>
+
+        <!-- Mục Mua bán tài khoản -->
+        <div class="section-title">Mua Bán Tài Khoản</div>
+
+        <a href="https://zalo.me/g/yourgroup" class="link-item">
+            <i class="fab fa-tiktok"></i>
+            <div class="link-content">
+                <span>Nhóm Giao Dịch TikTok</span>
+                <small>Mua bán, trao đổi tài khoản TikTok uy tín</small>
+            </div>
+            <i class="fas fa-external-link-alt"></i>
+        </a>
+
+        <a href="https://facebook.com/groups/yourgroup" class="link-item">
+            <i class="fas fa-shopping-cart"></i>
+            <div class="link-content">
+                <span>Chợ Tài Khoản MTH Media</span>
+                <small>Cung cấp Nick Facebook, Instagram, TikTok</small>
+            </div>
+            <i class="fas fa-external-link-alt"></i>
+        </a>
+
+        <!-- Mục Liên hệ -->
+        <div class="section-title">Liên Hệ Admin</div>
+
+        <a href="https://facebook.com/username" class="link-item">
+            <i class="fab fa-facebook"></i>
+            <div class="link-content">
+                <span>Facebook Cá Nhân</span>
+                <small>Hỗ trợ giải đáp thắc mắc 24/7</small>
+            </div>
+        </a>
+
+        <a href="https://zalo.me/0123456789" class="link-item">
+            <i class="fas fa-comment-dots"></i>
+            <div class="link-content">
+                <span>Zalo Tư Vấn</span>
+                <small>Liên hệ trực tiếp qua Zalo</small>
+            </div>
+        </a>
+
+        <div class="footer">
+            &copy; 2023 MTH Media. Thiết kế bởi Mai Sỹ Thành Huy
+        </div>
+    </div>
+
+</body>
+</html>
